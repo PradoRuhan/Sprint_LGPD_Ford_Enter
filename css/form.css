@@ -43,26 +43,75 @@ h2 {
     font-weight: 800;
 }
 
+.titulo {
+    margin-left: 8px;
+}
+
+main div.lgpd-container {
+    padding: 0; 
+    width: 310px;
+    margin: 5px 8px;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.lgpd-texto {
+    font-size: 10px;
+    color: #b5b5b5;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.lgpd-link {
+    color: #707070;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+main div.lgpd-linha {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 6px; 
+    font-size: 11px;
+    color: #555555;
+}
+
+.lgpd-linha input[type="checkbox"] {
+    margin: 0 8px 0 0;
+    cursor: pointer;
+}
+
+.lgpd-linha label {
+    margin: 0;
+    cursor: pointer;
+}
 
 button {
     width: 200px;
     height: 40px;
-    margin-right: 8px;
-    float: right;
+    margin: 15px auto 0 auto;
+    display: block;
     background-color: #003478;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: bold;
 
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #001c44;
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
-.titulo {
-    margin-left: 8px;
+button:disabled {
+    background-color: #a0b2ce; 
+    color: #ffffff;
+    cursor: not-allowed;
+    transform: none;
 }

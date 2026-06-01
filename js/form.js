@@ -24,6 +24,8 @@ function Post(form) {
 Enviar(data);
 
 form.reset();
+
+document.getElementById("btn-enviar").disabled = true;
   
 }
 
@@ -31,5 +33,15 @@ function Enviar(dadosInstanciados) {
     if (dadosInstanciados.nome !== "") {
         alert('Obrigado sr(a) ' + dadosInstanciados.nome + ' os seus dados foram encaminhados com sucesso');
     }
-
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const checkboxTermos = document.getElementById("aceite-termos");
+    const botaoEnviar = document.getElementById("btn-enviar");
+
+    if (checkboxTermos && botaoEnviar) {
+        checkboxTermos.addEventListener("change", function() {
+            botaoEnviar.disabled = !this.checked;
+        });
+    }
+});

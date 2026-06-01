@@ -42,14 +42,34 @@
                 <input type="text" name="nome" placeholder="Usuário*" class="fordform" required>
                 <input type="text" name="email" placeholder="E-mail*" class="fordform" required>
                 <input type="text" name="telefone" placeholder="Telefone*" class="fordform" required>
+                
                 <select name="tipo_contato" class="fordform" required>
                     <option value="" disabled selected>Motivo do contato:*</option>
                     <option value="ELOGIO">Elogio</option>
                     <option value="RECLAMAÇÕES">Reclamações</option>
                     <option value="SUGESTÕES">Sugestões</option>
                 </select>
+                
                 <textarea name="mensagem" placeholder="Escreva sua mensagem*" class="fordform" required></textarea>
-            <button type="submit">Enviar</button>
+                <div class="lgpd-container">
+                <p class="lgpd-texto">
+                    Os dados serão mantidos em nossa base de dados, somente enquanto for desejado por você. 
+                    A qualquer momento, será possível editar ou remover tais dados. 
+                    <a href="https://www.ford.com.br/politica-de-privacidade/" target="_blank" class="lgpd-link">Termos e Condições</a>
+                </p>
+                
+                <div class="lgpd-linha">
+                    <input type="checkbox" id="aceite-termos" required>
+                    <label for="aceite-termos">Sim, li e concordo com os vossos termos.</label>
+                </div>
+
+                <div class="lgpd-linha">
+                    <input type="checkbox" id="aceite-novidades">
+                    <label for="aceite-novidades">Sim, também quero receber descontos e novidades da Ford.</label>
+                </div>
+            </div>
+            
+                <button type="submit">Enviar</button>
             </form>
 
             </div>
